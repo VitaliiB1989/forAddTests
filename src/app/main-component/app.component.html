@@ -1,0 +1,9 @@
+<div class="main">
+	<div class="users-list">
+		<input class="searchBar" placeholder="Search..." [(ngModel)]='search'>
+		<div  *ngFor="let user of dataService.users | searchFilter:search; let i = index"  (click)='saveChekedClient(user)' [ngClass]="{'border': user == chekedClient}">
+			<client-list-container [user]=user></client-list-container>	
+		</div>
+	</div>
+	<detail-user-container style="flex:1" *ngIf='showDetails(chekedClient)' [user]=chekedClient></detail-user-container>
+</div>
