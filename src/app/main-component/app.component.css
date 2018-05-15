@@ -1,0 +1,21 @@
+.main{
+	height: 100vh;
+	display: flex;
+}
+.border{
+	border: 1px solid #fff;
+}
+.users-list{
+	overflow-y: scroll;
+	overflow-x: hidden;
+    height: 100%;
+    width: 30vw;
+}
+.searchBar{
+    width: 95%;
+    margin: 0.5vw;
+    border: 1px solid #fa2fb6;
+    padding: 5px;
+    font-size: 1.5vw;
+    color: blue;
+}
